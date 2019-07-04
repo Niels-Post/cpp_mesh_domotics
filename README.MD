@@ -17,6 +17,7 @@ Features
      The provided number of leds are turned on in the given port.
     - `output` **seven_segment**  
     Displays any provided number to a single digit seven segment display.
+    
 Dependencies
 -----
 Mesh_domotics relies on [cpp_mesh](https://github.com/Niels-Post/cpp_mesh) as mesh network implementation.
