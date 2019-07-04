@@ -6,6 +6,9 @@ A microcontroller can use 1 input, and 1 output module:
 - An input module can use sensors (eg. buttons, rotary encoders) to provide data for the network
 - An output module can drive actors (eg. leds, relays, motors) to respond to given input
 
+Code standard: C++17
+
+This library is part of my IPASS end project, for the first year of my HBO-ICT study at Hogeschool Utrecht in 2019.
 
 Features 
 ---
