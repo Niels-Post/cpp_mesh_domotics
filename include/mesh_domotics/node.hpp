@@ -13,6 +13,7 @@
 
 #include <mesh/mesh_network.hpp>
 #include <mesh_domotics/module.hpp>
+#include <hwlib.hpp>
 
 /**
  * \defgroup mesh_domotics Mesh Domotics
@@ -45,7 +46,7 @@ namespace mesh_domotics {
 
         output_module &outputmodule;
         input_module &inputmodule;
-        uint8_t output_update_count = 0;
+        uint32_t output_update_count = 0;
     public:
 
 
@@ -55,11 +56,11 @@ namespace mesh_domotics {
          * If this node is either receive only, or send only, the empty constructor for the corresponding module can be used
          * Depending on the module types, node will either feed data from the network into the module, or feed data from the module into the network
          * @param network Network to connect to and interact with
-         * @param inputModule Primary module to use for this node
-         * @param outputModule  Secondary module to use
+         * @param outputModule Primary module to use for this node
+         * @param inputModule  Secondary module to use
          */
-        node(mesh::mesh_network &network, output_module &inputModule,
-             input_module &outputModule);
+        node(mesh::mesh_network &network, output_module &outputModule,
+             input_module &inputModule);
 
 
         /**
